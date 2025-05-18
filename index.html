@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portofolio | Luhur Budi Aryanto</title>
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <!-- Google Fonts: Inter -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="asset/style.css" />
+  </head>
+
+  <body>
+    <!-- Navbar -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <div class="logo">MyPortfolio</div>
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle Navigation"
+        >
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Project</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header>
+      <h1>Luhur Budi Aryanto</h1>
+
+      <!-- Efek Ketik Gabungan -->
+      <div class="typing" id="typing-text"></div>
+
+      <button class="btn-cv" onclick="window.open('asset/CV.pdf', '_blank')">
+        <i class="fas fa-download"></i> Download CV
+      </button>
+
+      <button
+        class="btn-sertifikat"
+        onclick="window.open('asset/sertifikat.pdf', '_blank')"
+      >
+        <i class="fas fa-download"></i> Download Sertifikat
+      </button>
+
+      <button
+        class="mode-toggle"
+        id="modeToggle"
+        title="Ganti Mode Gelap/Terang"
+      >
+        <i class="fas fa-moon"></i>
+      </button>
+    </header>
+
+    <!-- Tentang Saya -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a professional in Information Technology Engineering with more than
+        5 years of experience in the telecommunications and networking industry.
+        Accustomed to handling installation, configuration, and troubleshooting
+        of networks from 2G to 5G generations. Having expertise in managing
+        national-scale transmission projects, technical audits, to
+        multi-generation system integration. I am also actively developing
+        myself in the field of web development and data analysis, with technical
+        expertise in HTML, CSS, JavaScript, PHP, SQL, Python, and understanding
+        of AI & IoT concepts. Experienced in working cross-functionally as a
+        technical coordinator, field team leader, and administrative executor in
+        projects. With an adaptive spirit and fast learner, I am open to
+        opportunities in the fields of IT, networking, and digital technology
+        that are challenging and have a high impact.
+      </p>
+    </section>
+
+    <!-- Proyek -->
+    <section id="projects">
+      <h2>Project</h2>
+      <div class="project-cards">
+        <!-- The Adventure of Wangon -->
+        <div class="project-card-container fade-in">
+          <div class="project-card">
+            <h3>The Adventure of Wangon</h3>
+            <!-- Project Image Carousel (2 Images) -->
+            <div class="project-image-carousel">
+              <img
+                class="carousel-image active"
+                src="asset/img/Wangon 1.jpg"
+                alt="Preview Game 1"
+              />
+              <img
+                class="carousel-image"
+                src="asset/img/Wangon.jpg"
+                alt="Preview Game 2"
+              />
+              <div class="carousel-controls">
+                <button onclick="prevImage(this)">&#10094;</button>
+                <button onclick="nextImage(this)">&#10095;</button>
+              </div>
+            </div>
+            <p>
+              Simple HTML/CSS/JS based game with interactive dashboard display.
+            </p>
+            <button class="toggle-detail">Detail</button>
+            <div class="project-links">
+              <a
+                href="https://xaryatc.github.io/game-simple-main/public/dashboard.html"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a
+                href="https://github.com/xaryatc/game-simple-main"
+                target="_blank"
+                >Source Code</a
+              >
+            </div>
+          </div>
+          <div class="project-detail">
+            <p>
+              Educational game with a dashboard interface that supports color
+              and control interaction. Made using HTML, CSS, and JavaScript in a
+              retro pixel style. Suitable for basic front-end programming
+              training.
+            </p>
+          </div>
+        </div>
+
+        <!-- Wedding Mustika Pekanbaru -->
+        <div class="project-card-container fade-in">
+          <div class="project-card">
+            <h3>Wedding Mustika Pekanbaru</h3>
+            <!-- Project Image Carousel (2 Images) -->
+            <div class="project-image-carousel">
+              <img
+                class="carousel-image active"
+                src="asset/img/weding.jpg"
+                alt="Preview Game 1"
+              />
+              <img
+                class="carousel-image"
+                src="asset/img/weding1.jpg"
+                alt="Preview Game 2"
+              />
+              <div class="carousel-controls">
+                <button onclick="prevImage(this)">&#10094;</button>
+                <button onclick="nextImage(this)">&#10095;</button>
+              </div>
+            </div>
+            <p>Website Wedding Organizer – Wedding Mustika Pekanbaru</p>
+            <button class="toggle-detail">Detail</button>
+            <div class="project-links">
+              <a
+                href="https://xaryatc.github.io/mustika/index.html"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a href="https://github.com/xaryatc/mustika" target="_blank"
+                >Source Code</a
+              >
+            </div>
+          </div>
+          <div class="project-detail">
+            <p>
+              This website is a portfolio project that I created to display the
+              profile and services of a wedding organizer business called
+              Wedding Mustika Pekanbaru. This website is built using HTML, CSS,
+              Bootstrap, and is designed to be responsive and easily accessible
+              from various devices.
+            </p>
+          </div>
+        </div>
+
+        <!-- Portfolio -->
+        <div class="project-card-container fade-in">
+          <div class="project-card">
+            <h3>Portfolio</h3>
+            <!-- Project Image Carousel (2 Images) -->
+            <div class="project-image-carousel">
+              <img
+                class="carousel-image active"
+                src="asset/img/portfolio.jpg"
+                alt="Preview Game 1"
+              />
+              <img
+                class="carousel-image"
+                src="asset/img/portfolio1.jpg"
+                alt="Preview Game 2"
+              />
+              <div class="carousel-controls">
+                <button onclick="prevImage(this)">&#10094;</button>
+                <button onclick="nextImage(this)">&#10095;</button>
+              </div>
+            </div>
+            <p>Website Portfolio</p>
+            <button class="toggle-detail">Detail</button>
+            <div class="project-links">
+              <a
+                href="https://xaryatc.github.io/mustika/index.html"
+                target="_blank"
+                >Live Demo</a
+              >
+              <a href="https://github.com/xaryatc/mustika" target="_blank"
+                >Source Code</a
+              >
+            </div>
+          </div>
+          <div class="project-detail">
+            <p>
+              This website is designed as a digital media to display my
+              professional profile and experience. The features in it include:
+              Toggle Mode (Dark/Light Mode), Scroll Reveal Animation, Debounce
+              Scroll Optimization, Typing Animation, Scroll Spy Navigation
+              (Highlight Menu When Scrolling), Mobile Toggle Navigation, Close
+              Mobile Menu When Link is Clicked, Toggle Project Details, Project
+              Image Carousel (Next/Prev Image)
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pengalaman -->
+    <section id="experience" class="fade-in">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <article style="position: relative">
+            <h3><strong>RF Engineer</strong></h3>
+            <span
+              style="
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 0.9em;
+                color: gray;
+              "
+              >July 2023–November 2024</span
+            >
+            <p><em>Dinamikon Inovasi Teknologi • Full Time</em></p>
+            <p>
+              Performing company data input neatly and systematically. Compiling
+              site documentation to perform E-ATP. Integration of 2G, 3G, LTE,
+              and 5G networks. Leading the integration and commissioning of 2G
+              to 5G networks in the Sumbagteng area. Managing field technical
+              teams and ensuring completion of tasks according to safety
+              standards and project timelines.
+            </p>
+          </article>
+        </li>
+
+        <li>
+          <article style="position: relative">
+            <h3><strong>Engineering Telecommunication</strong></h3>
+            <span
+              style="
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 0.9em;
+                color: gray;
+              "
+              >February 2021–June 2023</span
+            >
+            <p><em>PT. SISCOM TECHNOLOGIES • Full Time</em></p>
+            <p>
+              Responsible as technical and logistics coordinator in regional
+              transmission projects. Manage end-to-end work: audit,
+              installation, dismantle, traffic migration, reroute, swap, and new
+              site rollout. Monitor project implementation periodically against
+              SLA and technical KPI. Involved in Traffic migration, Reroute,
+              Rollout, Upgrade, Swap, New Link, B2B and multi-generation
+              technology integration projects.
+            </p>
+          </article>
+        </li>
+
+        <li>
+          <article style="position: relative">
+            <h3><strong>IT Support</strong></h3>
+            <span
+              style="
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 0.9em;
+                color: gray;
+              "
+              >January 2020–January 2021</span
+            >
+            <p><em>PT. Jaya Mas Teknologi • Full Time</em></p>
+            <p>
+              Coordinate the implementation of new site installations and
+              testing of transmission devices. Responsible for validating
+              network performance and quality control in the field. Compile
+              technical reports as material for weekly evaluation and monthly
+              management reports. Perform installation and dismantle of New
+              Site, Rectifier, QoS, PNMSJ projects according to the ongoing
+              project BOQ. Commissioning 2G, 3G, LTE, and 5G.
+            </p>
+          </article>
+        </li>
+
+        <li>
+          <article style="position: relative">
+            <h3><strong>Technician</strong></h3>
+            <span
+              style="
+                position: absolute;
+                top: 0;
+                right: 0;
+                font-size: 0.9em;
+                color: gray;
+              "
+              >June 2018–December 2019</span
+            >
+            <p><em>PT. Anugerah Mahameru Nusantara • Full Time</em></p>
+            <p>
+              Perform installation, dismantle, upgrade, swap upgrade, rollout,
+              upgrade change antenna transmission devices as well as photo
+              documentation and technical for E-ATP needs. Support field teams
+              in coordinating daily logistics and operations.
+            </p>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Kontak -->
+    <section id="contact" class="fade-in">
+      <h2>Contact</h2>
+      <div class="contact-list">
+        <div class="contact-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:career.luhurbudiaryanto@gmail.com"
+            >career.luhurbudiaryanto@gmail.com</a
+          >
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-linkedin"></i>
+          <a
+            href="https://www.linkedin.com/in/luhurbudiaryanto/"
+            target="_blank"
+          >
+            linkedin.com/in/luhurbudiaryanto
+          </a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-instagram"></i>
+          <a
+            href="https://www.instagram.com/luhurbudiaryantoo/?__pwa=1"
+            target="_blank"
+          >
+            @luhurbudiaryantoo
+          </a>
+        </div>
+        <div class="contact-item">
+          <i class="fab fa-github"></i>
+          <a href="https://github.com/xaryatc" target="_blank"
+            >github.com/xaryatc</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2025 Luhur Budi Aryanto.</p>
+    </footer>
+
+    <!-- Script -->
+    <script src="asset/script.js"></script>
+  </body>
+</html>
